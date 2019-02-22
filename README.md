@@ -11,22 +11,14 @@
 
 具体规则列表请参照ESLint官方网站：[规则文档](http://eslint.cn/docs/rules/)。
 
+```javascript
+require('@smartshallot/eslint-config/rules/base.install')(config);
+```
+
 ## React
 
 ```javascript
-module.exports = {
-    "extends": [
-        "@smartshallot/eslint-config/rules/react",
-    ],
-    "plugins": [
-        "react",
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true,
-        },
-    },
-};
+require('@smartshallot/eslint-config/rules/react.install')(config);
 ```
 
 ## React Native
@@ -38,20 +30,7 @@ module.exports = {
 在工程的`.eslintrc.js`中添加如下代码：
 
 ```javascript
-module.exports = {
-    "extends": [
-        "@smartshallot/eslint-config/rules/react-native",
-    ],
-    "plugins": [
-        "react",
-        "react-native",
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true,
-        },
-    },
-};
+require('@smartshallot/eslint-config/rules/react-native.install')(config);
 ```
 
 ## TypeScript
@@ -61,20 +40,5 @@ npm install --save-dev @typescript-eslint/parser
 ```
 
 ```javascript
-module.exports = {
-    "extends": [
-        "@smartshallot/eslint-config/rules/typescript",
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true,
-            "useJSXTextNode": true,
-        },
-    },
-    "plugins": [
-        "@typescript-eslint",
-    ],
-    "rules": [],
-};
+require('@smartshallot/eslint-config/rules/typescript.install')(config);
 ```

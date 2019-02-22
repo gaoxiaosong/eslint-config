@@ -20,7 +20,7 @@ module.exports = {
          * Detect raw text outside of Text component.
          * https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-raw-text.md
          */
-        "react-native/no-raw-text": "error",
+        "react-native/no-raw-text": "off",
         /**
          * Detect unused StyleSheet rules in React components.
          * https://github.com/Intellicode/eslint-plugin-react-native/blob/master/docs/rules/no-unused-styles.md

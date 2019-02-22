@@ -5,7 +5,7 @@
 const Util = require('./util');
 const allRules = require('eslint/lib/built-in-rules-index');
 const allRuleKeys = Object.keys(allRules);
-const myRules = require('../rules/base');
+const myRules = require('../rules/base').rules;
 const myRuleKeys = Object.keys(myRules);
 
 Util.seperator();

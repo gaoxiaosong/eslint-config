@@ -6,7 +6,7 @@ const prefix = 'react-native/';
 const Util = require('./util');
 const allRules = require('eslint-plugin-react-native').rules;
 const allRuleKeys = Object.keys(allRules);
-const myRules = require('../rules/react-native');
+const myRules = require('../rules/react-native').rules;
 const myRuleKeys = Object.keys(myRules);
 
 Util.seperator();
@@ -16,7 +16,7 @@ let errorCount = 0;
 for (let i = 0; i < allRuleKeys.length; i++) {
     const ruleId = prefix + allRuleKeys[i];
     const isInMyList = myRuleKeys.indexOf(ruleId) >= 0;
-    if (myRuleKeys.indexOf(ruleId) >= 0) {
+    if (isInMyList) {
         Util.log(ruleId, true);
     } else {
         Util.log(ruleId, false, 'not exists');

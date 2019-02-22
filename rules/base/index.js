@@ -1,5 +1,7 @@
 module.exports = {
-    ...require('./possible-errors'),
-    ...require('./strict-mode'),
-    ...require('./variables'),
+    "rules": {
+        ...require('./possible-errors'),
+        ...require('./strict-mode'),
+        ...require('./variables'),
+    },
 };

@@ -11,7 +11,10 @@
   },
   "keywords": [
     "eslint",
-    "config"
+    "config",
+    "react",
+    "react native",
+    "typescript"
   ],
   "author": "Xiaosong Gao",
   "license": "MIT",
@@ -20,9 +23,6 @@
     "email": "gaoxiaosong06@gmail.com"
   },
   "homepage": "https://github.com/gaoxiaosong/eslint-config#readme",
-  "peerDependencies": {
-    "eslint": "*"
-  },
   "publishConfig": {
     "access": "public"
   }

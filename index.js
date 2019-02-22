@@ -3,8 +3,7 @@ module.exports = {
         "eslint:recommended",
     ],
     "rules": {
-        ...require('./rules/possible-errors'),
-        ...require('./rules/strict-mode'),
+        ...require('./rules/base'),
         "array-callback-return": 2,
         "indent": [2, 4, {
             SwitchCase: 1,

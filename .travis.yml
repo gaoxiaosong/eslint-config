@@ -5,11 +5,13 @@ os:
  - linux
 
 stages:
+ - name: test
  - name: deploy
    if: tag IS present
 
 jobs:
  include:
+   - stage: test
    - stage: deploy
      deploy:
        provider: npm

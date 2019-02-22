@@ -12,33 +12,27 @@
 具体规则列表请参照ESLint官方网站：[规则文档](http://eslint.cn/docs/rules/)。
 
 ```javascript
-require('@smartshallot/eslint-config/rules/base.install')(config);
+require('@smartshallot/eslint-config/install/base')(config);
 ```
 
 ## React
 
 ```javascript
-require('@smartshallot/eslint-config/rules/react.install')(config);
+require('@smartshallot/eslint-config/install/react')(config);
 ```
 
 ## React Native
 
 这里使用了插件[eslint-plugin-react-native](https://github.com/Intellicode/eslint-plugin-react-native)。
 
-继承了`React (JavaScript)`部分的规则，添加了一些独有的规则。
-
 在工程的`.eslintrc.js`中添加如下代码：
 
 ```javascript
-require('@smartshallot/eslint-config/rules/react-native.install')(config);
+require('@smartshallot/eslint-config/install/react-native')(config);
 ```
 
 ## TypeScript
 
-```shell
-npm install --save-dev @typescript-eslint/parser
-```
-
 ```javascript
-require('@smartshallot/eslint-config/rules/typescript.install')(config);
+require('@smartshallot/eslint-config/install/typescript')(config);
 ```

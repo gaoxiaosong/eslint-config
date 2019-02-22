@@ -1,0 +1,27 @@
+{
+  "name": "@gaoxiaosong/eslint-config-base",
+  "version": "0.0.1",
+  "description": "An eslint configuration for base.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaoxiaosong/eslint-config-base.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Xiaosong Gao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaoxiaosong/eslint-config-base/issues",
+    "email": "gaoxiaosong06@gmail.com"
+  },
+  "homepage": "https://github.com/gaoxiaosong/eslint-config-base#readme",
+  "peerDependencies": {
+    "eslint": "*"
+  }
+}

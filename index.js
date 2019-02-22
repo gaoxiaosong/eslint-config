@@ -1,4 +1,5 @@
 module.exports = {
+    // TODO delete extends
     "extends": [
         "eslint:recommended",
     ],

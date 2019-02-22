@@ -28,7 +28,7 @@ for (let i = 0; i < allRuleKeys.length; i++) {
         continue;
     }
     const isWhite = whiteList.indexOf(ruleItem.meta.docs.category) >= 0;
-    if (myRuleKeys.indexOf(ruleId) >= 0) {
+    if (isInMyList) {
         Util.log(ruleId, true);
     } else if (isWhite) {
         Util.log(ruleId, false, 'not exists', ruleItem);

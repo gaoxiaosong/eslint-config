@@ -2,7 +2,11 @@ function log(ruleId, isSuccess, message, ruleItem) {
     if (isSuccess) {
         console.log('  ', ruleId + ':', 'Pass!');
     } else {
-        console.log('  ', '+', ruleId + ':', message + '!', ruleItem.meta.docs.category + '!', ruleItem.meta.docs.url);
+        console.log(
+            '  ', '+', ruleId + ':',
+            message + '!',
+            ruleItem ? ruleItem.meta.docs.category + '!' : '',
+            ruleItem ? ruleItem.meta.docs.url : '');
     }
 }
 

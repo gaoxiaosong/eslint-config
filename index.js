@@ -4,6 +4,7 @@ module.exports = {
     ],
     "rules": {
         ...require('./rules/possible-errors'),
+        ...require('./rules/strict-mode'),
         "array-callback-return": 2,
         "indent": [2, 4, {
             SwitchCase: 1,

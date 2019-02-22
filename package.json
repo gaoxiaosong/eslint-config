@@ -1,5 +1,6 @@
 {
   "name": "@gaoxiaosong/eslint-config-base",
+  "private": false,
   "version": "0.0.1",
   "description": "An eslint configuration for base.",
   "main": "index.js",

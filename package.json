@@ -1,13 +1,13 @@
 {
-  "name": "@smartshallot/eslint-config-base",
+  "name": "@smartshallot/eslint-config",
   "private": false,
   "version": "0.0.2",
-  "description": "An eslint configuration for base.",
+  "description": "An ESLint Configuration Set.",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaoxiaosong/eslint-config-base.git"
+    "url": "https://github.com/gaoxiaosong/eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -16,10 +16,10 @@
   "author": "Xiaosong Gao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaoxiaosong/eslint-config-base/issues",
+    "url": "https://github.com/gaoxiaosong/eslint-config/issues",
     "email": "gaoxiaosong06@gmail.com"
   },
-  "homepage": "https://github.com/gaoxiaosong/eslint-config-base#readme",
+  "homepage": "https://github.com/gaoxiaosong/eslint-config#readme",
   "peerDependencies": {
     "eslint": "*"
   },

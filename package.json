@@ -22,5 +22,8 @@
   "homepage": "https://github.com/gaoxiaosong/eslint-config-base#readme",
   "peerDependencies": {
     "eslint": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

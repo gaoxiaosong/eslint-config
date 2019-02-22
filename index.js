@@ -20,9 +20,6 @@ module.exports = {
             "maxEOF": 1,
             "maxBOF": 0,
         }], // disallow multiple empty lines
-        "no-unused-vars": [2, { // disallow unused variables
-            "argsIgnorePattern": "^_"
-        }],
         "padded-blocks": [2, {
             "blocks": "never",
             "classes": "never",

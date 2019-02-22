@@ -11,7 +11,7 @@ const myRuleKeys = Object.keys(myRules);
 Util.seperator();
 Util.head('Base');
 
-const whiteList = ['Possible Errors', 'Strict Mode'];
+const whiteList = ['Possible Errors', 'Strict Mode', 'Variables'];
 
 let errorCount = 0;
 let deprecatedCount = 0;
@@ -22,6 +22,7 @@ for (let i = 0; i < allRuleKeys.length; i++) {
     if (ruleItem.meta.deprecated) {
         if (isInMyList) {
             Util.log(ruleId, false, 'deprecated', ruleItem);
+            errorCount += 1;
         }
         deprecatedCount += 1;
         continue;

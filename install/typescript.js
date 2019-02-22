@@ -10,6 +10,8 @@ module.exports = function (config) {
     Install.generateDefault(config, ['parserOptions', 'ecmaFeatures'], {});
     config.parserOptions.ecmaFeatures.jsx = true;
     config.parserOptions.ecmaFeatures.useJSXTextNode = true;
+    config.parserOptions.ecmaVersion = 6;
+    config.parserOptions.sourceType = "module";
     // plugins
     Install.generateDefault(config, 'plugins', []);
     config.plugins.push("@typescript-eslint");

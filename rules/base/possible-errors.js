@@ -18,6 +18,11 @@ module.exports = {
         "allowImplicit": false,
     }],
     /**
+     * Disallow using an async function as a Promise executor.
+     * https://eslint.org/docs/rules/no-async-promise-executor
+     */
+    "no-async-promise-executor": "error",
+    /**
      * 禁止在循环中出现await。
      * http://eslint.cn/docs/rules/no-await-in-loop
      */
@@ -134,6 +139,11 @@ module.exports = {
         "skipTemplates": true,
     }],
     /**
+     * Disallow characters which are made with multiple code points in character class syntax.
+     * https://eslint.org/docs/rules/no-misleading-character-class
+     */
+    "no-misleading-character-class": "error",
+    /**
      * 禁止把全局对象作为函数调用。
      * http://eslint.cn/docs/rules/no-obj-calls
      */
@@ -179,34 +189,15 @@ module.exports = {
      */
     "no-unsafe-negation": "error",
     /**
+     * Disallow assignments that can lead to race conditions due to usage of await or yield.
+     * https://eslint.org/docs/rules/require-atomic-updates
+     */
+    "require-atomic-updates": "error",
+    /**
      * 要求使用isNaN()检查NaN。
      * http://eslint.cn/docs/rules/use-isnan
      */
     "use-isnan": "error",
-    /**
-     * 强制使用有效的JSDoc注释。
-     * http://eslint.cn/docs/rules/valid-jsdoc
-     */
-    "valid-jsdoc": ["warn", {
-        "prefer": {
-            "arg": "param",
-            "argument": "param",
-            "class": "constructor",
-            "return": "returns",
-            "virtual": "abstract",
-        },
-        "preferType": {
-            "Boolean": "boolean",
-            "Number": "number",
-            "object": "object",
-            "String": "string",
-        },
-        "requireReturn": false,
-        "requireReturnType": true,
-        "matchDescription": ".+",
-        "requireParamDescription": true,
-        "requireReturnDescription": true,
-    }],
     /**
      * 强制typeof表达式与有效的字符串进行比较。
      * http://eslint.cn/docs/rules/valid-typeof

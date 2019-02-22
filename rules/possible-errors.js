@@ -35,9 +35,7 @@ module.exports = {
      * 禁用console。
      * http://eslint.cn/docs/rules/no-console
      */
-    "no-console": ["error", {
-        "allow": [],
-    }],
+    "no-console": ["error"],
     /**
      * 禁止在条件中使用常量表达式。
      * http://eslint.cn/docs/rules/no-constant-condition
@@ -130,10 +128,10 @@ module.exports = {
      * http://eslint.cn/docs/rules/no-irregular-whitespace
      */
     "no-irregular-whitespace": ["error", {
-        "skipStrings": "true",
-        "skipComments": "true",
-        "skipRegExps": "true",
-        "skipTemplates": "true",
+        "skipStrings": true,
+        "skipComments": true,
+        "skipRegExps": true,
+        "skipTemplates": true,
     }],
     /**
      * 禁止把全局对象作为函数调用。

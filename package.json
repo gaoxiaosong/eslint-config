@@ -1,5 +1,5 @@
 {
-  "name": "@smartshallot/eslint-config",
+  "name": "eslint-config-automatic",
   "private": false,
   "version": "0.0.6",
   "description": "An ESLint Configuration Set.",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaoxiaosong/eslint-config.git"
+    "url": "https://github.com/gaoxiaosong/eslint-config-automatic.git"
   },
   "keywords": [
     "eslint",
@@ -21,10 +21,10 @@
   "author": "Xiaosong Gao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaoxiaosong/eslint-config/issues",
+    "url": "https://github.com/gaoxiaosong/eslint-config-automatic/issues",
     "email": "gaoxiaosong06@gmail.com"
   },
-  "homepage": "https://github.com/gaoxiaosong/eslint-config#readme",
+  "homepage": "https://github.com/gaoxiaosong/eslint-config-automatic#readme",
   "publishConfig": {
     "access": "public"
   },

@@ -3,7 +3,7 @@ const Install = require('./install');
 module.exports = function (config) {
     // extends
     Install.generateDefault(config, 'extends', []);
-    config.extends.push("@smartshallot/eslint-config/rules/react-native");
+    config.extends.push("eslint-config-automatic/rules/react-native");
     // plugins
     Install.generateDefault(config, 'plugins', []);
     config.plugins.push("react-native");

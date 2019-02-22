@@ -3,7 +3,7 @@ const Install = require('./install');
 module.exports = function (config) {
     // extends
     Install.generateDefault(config, 'extends', []);
-    config.extends.push("@smartshallot/eslint-config/rules/typescript");
+    config.extends.push("eslint-config-automatic/rules/typescript");
     // parser
     config.parser = "@typescript-eslint/parser";
     // parserOptions

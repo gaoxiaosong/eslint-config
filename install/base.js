@@ -1,7 +1,9 @@
-const Install = require('./install');
+const _ = require('lodash');
 
 module.exports = function (config) {
-    // extends
-    Install.generateDefault(config, 'extends', []);
-    config.extends.push("eslint-config-automatic/rules/base");
+    // rules
+    _.defaultsDeep(config, {'rules': {}});
+    Object.assign(config.rules, require('../rules/base'));
+    // return
+    return config;
 };

@@ -6,7 +6,7 @@ const prefix = 'react-native/';
 const Util = require('./util');
 const allRules = require('eslint-plugin-react-native').rules;
 const allRuleKeys = Object.keys(allRules);
-const myRules = require('../rules/react-native').rules;
+const myRules = require('../rules/react-native');
 const myRuleKeys = Object.keys(myRules);
 
 Util.seperator();

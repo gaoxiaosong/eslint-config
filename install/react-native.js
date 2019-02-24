@@ -1,13 +1,15 @@
-const Install = require('./install');
+const _ = require('lodash');
 
 module.exports = function (config) {
-    // extends
-    Install.generateDefault(config, 'extends', []);
-    config.extends.push("eslint-config-automatic/rules/react-native");
+    // rules
+    _.defaultsDeep(config, {'rules': {}});
+    Object.assign(config.rules, require('../rules/react-native'));
     // plugins
-    Install.generateDefault(config, 'plugins', []);
+    _.defaultsDeep(config, {'plugins': []});
     config.plugins.push("react-native");
     // parserOptions
-    Install.generateDefault(config, ["parserOptions", "ecmaFeatures"], {});
+    _.defaultsDeep(config, {'parserOptions': {"ecmaFeatures": {}}});
     config.parserOptions.ecmaFeatures.jsx = true;
+    // return
+    return config;
 };

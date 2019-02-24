@@ -5,9 +5,7 @@
  */
 
 module.exports = {
-    "rules": {
-        ...require('./possible-errors'),
-        ...require('./strict-mode'),
-        ...require('./variables'),
-    },
+    ...require('./possible-errors'),
+    ...require('./strict-mode'),
+    ...require('./variables'),
 };

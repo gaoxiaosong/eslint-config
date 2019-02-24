@@ -1,18 +1,20 @@
-const Install = require('./install');
+const _ = require('lodash');
 
 module.exports = function (config) {
-    // extends
-    Install.generateDefault(config, 'extends', []);
-    config.extends.push("eslint-config-automatic/rules/typescript");
+    // rules
+    _.defaultsDeep(config, {'rules': {}});
+    Object.assign(config.rules, require('../rules/typescript'));
     // parser
     config.parser = "@typescript-eslint/parser";
     // parserOptions
-    Install.generateDefault(config, ['parserOptions', 'ecmaFeatures'], {});
+    _.defaultsDeep(config, {'parserOptions': {'ecmaFeatures': {}}});
     config.parserOptions.ecmaFeatures.jsx = true;
     config.parserOptions.ecmaFeatures.useJSXTextNode = true;
     config.parserOptions.ecmaVersion = 6;
     config.parserOptions.sourceType = "module";
     // plugins
-    Install.generateDefault(config, 'plugins', []);
+    _.defaultsDeep(config, {'plugins': []});
     config.plugins.push("@typescript-eslint");
+    // return
+    return config;
 };

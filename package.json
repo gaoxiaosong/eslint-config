@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-automatic",
+  "name": "eslint-plugin-automatic",
   "private": false,
   "version": "0.1.2",
   "description": "An ESLint Configuration Set.",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaoxiaosong/eslint-config-automatic.git"
+    "url": "https://github.com/gaoxiaosong/eslint-plugin-automatic.git"
   },
   "keywords": [
     "eslint",
@@ -21,10 +21,10 @@
   "author": "Xiaosong Gao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaoxiaosong/eslint-config-automatic/issues",
+    "url": "https://github.com/gaoxiaosong/eslint-plugin-automatic/issues",
     "email": "gaoxiaosong06@gmail.com"
   },
-  "homepage": "https://github.com/gaoxiaosong/eslint-config-automatic#readme",
+  "homepage": "https://github.com/gaoxiaosong/eslint-plugin-automatic#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -35,6 +35,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
+    "lodash": "^4.17.11",
     "typescript": "^3.3.3333"
   }
 }

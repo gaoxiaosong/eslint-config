@@ -1,6 +1,9 @@
 const _ = require('lodash');
 
 module.exports = function (config) {
+    // env
+    _.defaultsDeep(config, {'env': {}});
+    config.env.commonjs = true;
     // rules
     _.defaultsDeep(config, {'rules': {}});
     Object.assign(config.rules, require('../rules/react'));

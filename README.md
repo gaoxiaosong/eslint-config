@@ -13,7 +13,7 @@
 
 ```javascript
 "extends": [
-    "@smartshallot/rules/react-native",
+    "eslint-config-automatic/rules/react-native",
 ]
 ```
 
@@ -33,12 +33,12 @@ const config = {
     // ...
     "extends": [
         // ...
-        "@smartshallot/rules/react-native",
+        "eslint-config-automatic/rules/react-native",
     ],
     // ...
 }
 
-require('@smartshallot/install/react-native')(config);
+require('eslint-config-automatic/install/react-native')(config);
 
 module.exports = config;
 ```
@@ -52,7 +52,7 @@ module.exports = config;
 以TypeScript语言的`react-native`项目为例，对应于`module`目录下的`typescript-react-native.js`文件，需要在`.eslintrc.js`中，设置如下：
 
 ```javascript
-const config = require('@smartshallot/module/typescript-react-native');
+const config = require('eslint-config-automatic/module/typescript-react-native');
 // 这里添加想修改的设置，也可以不添加
 module.exports = config;
 ```

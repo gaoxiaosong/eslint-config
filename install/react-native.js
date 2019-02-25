@@ -13,6 +13,9 @@ module.exports = function (config) {
     // parserOptions
     _.defaultsDeep(config, {'parserOptions': {"ecmaFeatures": {}}});
     config.parserOptions.ecmaFeatures.jsx = true;
+    // settings
+    _.defaultsDeep(config, {'settings': {'import/resolver': {}}});
+    config.settings['import/resolver']['react-native'] = {platform: 'both'};
     // return
     return config;
 };

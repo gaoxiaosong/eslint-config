@@ -15,6 +15,10 @@ module.exports = function (config) {
     // plugins
     _.defaultsDeep(config, {'plugins': []});
     config.plugins.push("@typescript-eslint");
+    // settings
+    _.defaultsDeep(config, {'settings': {'import/parsers': {}, 'import/resolver': {}}});
+    config.settings['import/parsers']['@typescript-eslint/parser'] = ['.ts', '.tsx'];
+    config.settings['import/resolver']['typescript'] = {};
     // return
     return config;
 };

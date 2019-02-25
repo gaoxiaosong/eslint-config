@@ -35,3 +35,13 @@ plugin: [
 * `typescript`：只使用TypeScript开发的项目，没有React相关代码。
 * `typescript-react`：使用TypeScript开发的React项目。
 * `typescript-react-native`：使用TypeScript开发的React Native项目。
+
+目前`typescript-xxx`使用的`parser`是`@typescript-eslint/parser`，而`javascript-react-xxx`使用的`parser`是`babel-eslint`，需要酌情加入`.babelrc`。
+
+对于`javascript-react-native`来说，需要在`.babelrc`中加入：
+
+```javascript
+{
+    "presets": ["react-native"]
+}
+```

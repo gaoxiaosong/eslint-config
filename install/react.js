@@ -10,9 +10,12 @@ module.exports = function (config) {
     // plugins
     _.defaultsDeep(config, {'plugins': []});
     config.plugins.push("react");
+    // parser
+    config.parser = "babel-eslint";
     // parserOptions
     _.defaultsDeep(config, {'parserOptions': {"ecmaFeatures": {}}});
     config.parserOptions.ecmaFeatures.jsx = true;
+    config.parserOptions.sourceType = "module";
     // settings
     _.defaultsDeep(config, {'settings': {'react': {}}});
     config.settings.react.createClass = "createReactClass";

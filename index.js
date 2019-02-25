@@ -5,38 +5,39 @@ module.exports = {
     configs: {
         "javascript": _.flow(
             require('./install/base'),
+            require('./install/import'),
         )({}),
         "javascript-react": _.flow(
             require('./install/base'),
+            require('./install/import'),
             require('./install/react'),
         )({}),
         "javascript-react-native": _.flow(
             require('./install/base'),
+            require('./install/import'),
             require('./install/react'),
             require('./install/react-native'),
         )({}),
         "typescript": _.flow(
             require('./install/base'),
+            require('./install/import'),
             require('./install/typescript'),
         )({}),
         "typescript-react": _.flow(
             require('./install/base'),
+            require('./install/import'),
             require('./install/react'),
             require('./install/typescript'),
         )({}),
         "typescript-react-native": _.flow(
             require('./install/base'),
+            require('./install/import'),
             require('./install/react'),
             require('./install/react-native'),
             require('./install/typescript'),
         )({}),
     },
-    // // TODO delete extends
-    // "extends": [
-    //     "eslint:recommended",
-    // ],
     // "rules": {
-    //     ...require('./rules/base'),
     //     "array-callback-return": 2,
     //     "indent": [2, 4, {
     //         SwitchCase: 1,
